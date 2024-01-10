@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA1A96502B4F4310001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A964F2B4F40E1001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		FA1A96512B4F4311001026B7 /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A964E2B4F40E1001026B7 /* VNClassificationObservation+confidenceString.swift */; };
+		FA1A965C2B4F4921001026B7 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96492B4F3BD2001026B7 /* ImagePredictor.swift */; };
+		FA1A965D2B4F4A2C001026B7 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96582B4F45F1001026B7 /* MobileNet.mlmodel */; };
+		FAA98CA52B4D0096002BD5C0 /* DeliriumDriftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CA42B4D0096002BD5C0 /* DeliriumDriftApp.swift */; };
+		FAA98CA72B4D0096002BD5C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CA62B4D0096002BD5C0 /* ContentView.swift */; };
+		FAA98CA92B4D0097002BD5C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA98CA82B4D0097002BD5C0 /* Assets.xcassets */; };
+		FAA98CAC2B4D0097002BD5C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA98CAB2B4D0097002BD5C0 /* Preview Assets.xcassets */; };
+		FAA98CB32B4D00E0002BD5C0 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CB22B4D00E0002BD5C0 /* CameraView.swift */; };
+		FAA98CB52B4D01B0002BD5C0 /* CalmingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CB42B4D01B0002BD5C0 /* CalmingView.swift */; };
+		FAA98CB72B4D020D002BD5C0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CB62B4D020D002BD5C0 /* CameraViewController.swift */; };
+		FAA98CB92B4D0247002BD5C0 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CB82B4D0247002BD5C0 /* AudioPlayer.swift */; };
+		FADC82932B4E05CE006DA5E1 /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC82922B4E05CE006DA5E1 /* PageModel.swift */; };
+		FADC82952B4E0947006DA5E1 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC82942B4E0947006DA5E1 /* PageView.swift */; };
+		FADC82972B4E0AF8006DA5E1 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC82962B4E0AF8006DA5E1 /* IntroView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA1A96492B4F3BD2001026B7 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		FA1A964E2B4F40E1001026B7 /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
+		FA1A964F2B4F40E1001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		FA1A96582B4F45F1001026B7 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
+		FA1A96592B4F45F1001026B7 /* NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		FA1A965A2B4F45F1001026B7 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		FAA98CA12B4D0096002BD5C0 /* DeliriumDrift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliriumDrift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAA98CA42B4D0096002BD5C0 /* DeliriumDriftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliriumDriftApp.swift; sourceTree = "<group>"; };
+		FAA98CA62B4D0096002BD5C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAA98CA82B4D0097002BD5C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAA98CAB2B4D0097002BD5C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAA98CB22B4D00E0002BD5C0 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		FAA98CB42B4D01B0002BD5C0 /* CalmingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmingView.swift; sourceTree = "<group>"; };
+		FAA98CB62B4D020D002BD5C0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FAA98CB82B4D0247002BD5C0 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		FADC82922B4E05CE006DA5E1 /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		FADC82942B4E0947006DA5E1 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		FADC82962B4E0AF8006DA5E1 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAA98C9E2B4D0096002BD5C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA1A96482B4F3BD2001026B7 /* Vision + Core-ML */ = {
+			isa = PBXGroup;
+			children = (
+				FA1A96572B4F45F1001026B7 /* Model */,
+				FA1A96532B4F4351001026B7 /* Image Predictor */,
+				FA1A96522B4F432F001026B7 /* Extensions */,
+			);
+			path = "Vision + Core-ML";
+			sourceTree = "<group>";
+		};
+		FA1A96522B4F432F001026B7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA1A964F2B4F40E1001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+				FA1A964E2B4F40E1001026B7 /* VNClassificationObservation+confidenceString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA1A96532B4F4351001026B7 /* Image Predictor */ = {
+			isa = PBXGroup;
+			children = (
+				FA1A96492B4F3BD2001026B7 /* ImagePredictor.swift */,
+			);
+			path = "Image Predictor";
+			sourceTree = "<group>";
+		};
+		FA1A96572B4F45F1001026B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA1A96582B4F45F1001026B7 /* MobileNet.mlmodel */,
+				FA1A96592B4F45F1001026B7 /* NOTICE.txt */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA1A965B2B4F46C0001026B7 /* LICENSE */ = {
+			isa = PBXGroup;
+			children = (
+				FA1A965A2B4F45F1001026B7 /* LICENSE.txt */,
+			);
+			path = LICENSE;
+			sourceTree = "<group>";
+		};
+		FAA98C982B4D0095002BD5C0 = {
+			isa = PBXGroup;
+			children = (
+				FAA98CA32B4D0096002BD5C0 /* DeliriumDrift */,
+				FAA98CA22B4D0096002BD5C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAA98CA22B4D0096002BD5C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAA98CA12B4D0096002BD5C0 /* DeliriumDrift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAA98CA32B4D0096002BD5C0 /* DeliriumDrift */ = {
+			isa = PBXGroup;
+			children = (
+				FA1A96482B4F3BD2001026B7 /* Vision + Core-ML */,
+				FAA98CA42B4D0096002BD5C0 /* DeliriumDriftApp.swift */,
+				FAA98CA62B4D0096002BD5C0 /* ContentView.swift */,
+				FAA98CB42B4D01B0002BD5C0 /* CalmingView.swift */,
+				FAA98CB22B4D00E0002BD5C0 /* CameraView.swift */,
+				FAA98CB62B4D020D002BD5C0 /* CameraViewController.swift */,
+				FAA98CB82B4D0247002BD5C0 /* AudioPlayer.swift */,
+				FADC82982B4E0BD9006DA5E1 /* Sliding Intro Screens */,
+				FAA98CAA2B4D0097002BD5C0 /* Preview Content */,
+				FA1A965B2B4F46C0001026B7 /* LICENSE */,
+			);
+			path = DeliriumDrift;
+			sourceTree = "<group>";
+		};
+		FAA98CAA2B4D0097002BD5C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAA98CA82B4D0097002BD5C0 /* Assets.xcassets */,
+				FAA98CAB2B4D0097002BD5C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FADC82982B4E0BD9006DA5E1 /* Sliding Intro Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FADC82942B4E0947006DA5E1 /* PageView.swift */,
+				FADC82922B4E05CE006DA5E1 /* PageModel.swift */,
+				FADC82962B4E0AF8006DA5E1 /* IntroView.swift */,
+			);
+			path = "Sliding Intro Screens";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAA98CA02B4D0096002BD5C0 /* DeliriumDrift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAA98CAF2B4D0097002BD5C0 /* Build configuration list for PBXNativeTarget "DeliriumDrift" */;
+			buildPhases = (
+				FAA98C9D2B4D0096002BD5C0 /* Sources */,
+				FAA98C9E2B4D0096002BD5C0 /* Frameworks */,
+				FAA98C9F2B4D0096002BD5C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeliriumDrift;
+			productName = DeliriumDrift;
+			productReference = FAA98CA12B4D0096002BD5C0 /* DeliriumDrift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAA98C992B4D0095002BD5C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					FAA98CA02B4D0096002BD5C0 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = FAA98C9C2B4D0095002BD5C0 /* Build configuration list for PBXProject "DeliriumDrift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAA98C982B4D0095002BD5C0;
+			productRefGroup = FAA98CA22B4D0096002BD5C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAA98CA02B4D0096002BD5C0 /* DeliriumDrift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAA98C9F2B4D0096002BD5C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA98CAC2B4D0097002BD5C0 /* Preview Assets.xcassets in Resources */,
+				FAA98CA92B4D0097002BD5C0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAA98C9D2B4D0096002BD5C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA98CB32B4D00E0002BD5C0 /* CameraView.swift in Sources */,
+				FADC82952B4E0947006DA5E1 /* PageView.swift in Sources */,
+				FADC82932B4E05CE006DA5E1 /* PageModel.swift in Sources */,
+				FAA98CB72B4D020D002BD5C0 /* CameraViewController.swift in Sources */,
+				FA1A965D2B4F4A2C001026B7 /* MobileNet.mlmodel in Sources */,
+				FA1A96512B4F4311001026B7 /* VNClassificationObservation+confidenceString.swift in Sources */,
+				FAA98CA72B4D0096002BD5C0 /* ContentView.swift in Sources */,
+				FADC82972B4E0AF8006DA5E1 /* IntroView.swift in Sources */,
+				FAA98CB52B4D01B0002BD5C0 /* CalmingView.swift in Sources */,
+				FAA98CA52B4D0096002BD5C0 /* DeliriumDriftApp.swift in Sources */,
+				FAA98CB92B4D0247002BD5C0 /* AudioPlayer.swift in Sources */,
+				FA1A965C2B4F4921001026B7 /* ImagePredictor.swift in Sources */,
+				FA1A96502B4F4310001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAA98CAD2B4D0097002BD5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAA98CAE2B4D0097002BD5C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAA98CB02B4D0097002BD5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeliriumDrift/Preview Content\"";
+				DEVELOPMENT_TEAM = 3644RKD5W6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture images";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = syim.DeliriumDrift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAA98CB12B4D0097002BD5C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DeliriumDrift/Preview Content\"";
+				DEVELOPMENT_TEAM = 3644RKD5W6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to capture images";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = syim.DeliriumDrift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAA98C9C2B4D0095002BD5C0 /* Build configuration list for PBXProject "DeliriumDrift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA98CAD2B4D0097002BD5C0 /* Debug */,
+				FAA98CAE2B4D0097002BD5C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAA98CAF2B4D0097002BD5C0 /* Build configuration list for PBXNativeTarget "DeliriumDrift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAA98CB02B4D0097002BD5C0 /* Debug */,
+				FAA98CB12B4D0097002BD5C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAA98C992B4D0095002BD5C0 /* Project object */;
+}
