@@ -1,3 +1,10 @@
+//
+//  CameraView.swift
+//  DeliriumDrift
+//
+//  Created by Steven Yim on 1/8/24.
+//
+
 import SwiftUI
 import VisionKit
 import CoreML
@@ -5,6 +12,7 @@ import Vision
 
 struct CameraView: UIViewControllerRepresentable {
     @Binding var isCameraActive: Bool
+    var predictionsHandler: ([ImagePredictor.Prediction]?) -> Void
 
     func makeUIViewController(context: Context) -> VNDocumentCameraViewController {
         let cameraViewController = VNDocumentCameraViewController()
@@ -46,8 +54,6 @@ struct CameraView: UIViewControllerRepresentable {
 
             // Perform image classification using MobileNetV2
             classifyImage(cgImage: cgImage)
-
-            parent.isCameraActive = false
         }
 
         func documentCameraViewControllerDidCancel(_ controller: VNDocumentCameraViewController) {
@@ -65,9 +71,7 @@ struct CameraView: UIViewControllerRepresentable {
                 try imagePredictor.makePredictions(for: UIImage(cgImage: cgImage)) { predictions in
                     // Handle the predictions
                     if let predictions = predictions {
-                        for prediction in predictions {
-                            print("Classification: \(prediction.classification) with confidence \(prediction.confidencePercentage)")
-                        }
+                        self.parent.predictionsHandler(predictions)
                     } else {
                         print("Image classification failed.")
                     }

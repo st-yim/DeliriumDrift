@@ -9,20 +9,32 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isCameraActive = false
-
+    @State private var selectedPrediction: ImagePredictor.Prediction?
+    
     var body: some View {
         VStack {
             if isCameraActive {
-                CameraView(isCameraActive: $isCameraActive)
+                CameraView(isCameraActive: $isCameraActive, predictionsHandler: handlePredictions)
                     .edgesIgnoringSafeArea(.all)
             } else {
-                // Your other view when the camera is not active
-                Text("Switch to Camera View")
-                    .onTapGesture {
-                        isCameraActive.toggle()
-                    }
+                if let selectedPrediction = selectedPrediction {
+                    
+                    RelatedWordsView(selectedPrediction: selectedPrediction)
+                } else {
+                    Text("Switch to Camera View")
+                        .onTapGesture {
+                            isCameraActive.toggle()
+                        }
+                }
             }
         }
+    }
+
+    func handlePredictions(predictions: [ImagePredictor.Prediction]?) {
+        // Here, you can define your logic to choose the top prediction
+        self.selectedPrediction = predictions?.first
+        
+        isCameraActive = false
     }
 }
 

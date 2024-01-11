@@ -11,6 +11,8 @@
 		FA1A96512B4F4311001026B7 /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A964E2B4F40E1001026B7 /* VNClassificationObservation+confidenceString.swift */; };
 		FA1A965C2B4F4921001026B7 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96492B4F3BD2001026B7 /* ImagePredictor.swift */; };
 		FA1A965D2B4F4A2C001026B7 /* MobileNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96582B4F45F1001026B7 /* MobileNet.mlmodel */; };
+		FA1A965F2B4F8F40001026B7 /* GPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A965E2B4F8F40001026B7 /* GPTService.swift */; };
+		FA1A96612B4FA9B8001026B7 /* RelatedWordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96602B4FA9B8001026B7 /* RelatedWordsView.swift */; };
 		FAA98CA52B4D0096002BD5C0 /* DeliriumDriftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CA42B4D0096002BD5C0 /* DeliriumDriftApp.swift */; };
 		FAA98CA72B4D0096002BD5C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA98CA62B4D0096002BD5C0 /* ContentView.swift */; };
 		FAA98CA92B4D0097002BD5C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAA98CA82B4D0097002BD5C0 /* Assets.xcassets */; };
@@ -31,6 +33,8 @@
 		FA1A96582B4F45F1001026B7 /* MobileNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNet.mlmodel; sourceTree = "<group>"; };
 		FA1A96592B4F45F1001026B7 /* NOTICE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
 		FA1A965A2B4F45F1001026B7 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		FA1A965E2B4F8F40001026B7 /* GPTService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTService.swift; sourceTree = "<group>"; };
+		FA1A96602B4FA9B8001026B7 /* RelatedWordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelatedWordsView.swift; sourceTree = "<group>"; };
 		FAA98CA12B4D0096002BD5C0 /* DeliriumDrift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeliriumDrift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAA98CA42B4D0096002BD5C0 /* DeliriumDriftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliriumDriftApp.swift; sourceTree = "<group>"; };
 		FAA98CA62B4D0096002BD5C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,14 +123,16 @@
 		FAA98CA32B4D0096002BD5C0 /* DeliriumDrift */ = {
 			isa = PBXGroup;
 			children = (
-				FA1A96482B4F3BD2001026B7 /* Vision + Core-ML */,
 				FAA98CA42B4D0096002BD5C0 /* DeliriumDriftApp.swift */,
 				FAA98CA62B4D0096002BD5C0 /* ContentView.swift */,
+				FA1A96602B4FA9B8001026B7 /* RelatedWordsView.swift */,
 				FAA98CB42B4D01B0002BD5C0 /* CalmingView.swift */,
 				FAA98CB22B4D00E0002BD5C0 /* CameraView.swift */,
 				FAA98CB62B4D020D002BD5C0 /* CameraViewController.swift */,
+				FA1A965E2B4F8F40001026B7 /* GPTService.swift */,
 				FAA98CB82B4D0247002BD5C0 /* AudioPlayer.swift */,
-				FADC82982B4E0BD9006DA5E1 /* Sliding Intro Screens */,
+				FADC82982B4E0BD9006DA5E1 /* Introduction */,
+				FA1A96482B4F3BD2001026B7 /* Vision + Core-ML */,
 				FAA98CAA2B4D0097002BD5C0 /* Preview Content */,
 				FA1A965B2B4F46C0001026B7 /* LICENSE */,
 			);
@@ -142,14 +148,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FADC82982B4E0BD9006DA5E1 /* Sliding Intro Screens */ = {
+		FADC82982B4E0BD9006DA5E1 /* Introduction */ = {
 			isa = PBXGroup;
 			children = (
 				FADC82942B4E0947006DA5E1 /* PageView.swift */,
 				FADC82922B4E05CE006DA5E1 /* PageModel.swift */,
 				FADC82962B4E0AF8006DA5E1 /* IntroView.swift */,
 			);
-			path = "Sliding Intro Screens";
+			path = Introduction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA98CB32B4D00E0002BD5C0 /* CameraView.swift in Sources */,
+				FA1A96612B4FA9B8001026B7 /* RelatedWordsView.swift in Sources */,
 				FADC82952B4E0947006DA5E1 /* PageView.swift in Sources */,
 				FADC82932B4E05CE006DA5E1 /* PageModel.swift in Sources */,
 				FAA98CB72B4D020D002BD5C0 /* CameraViewController.swift in Sources */,
@@ -231,6 +238,7 @@
 				FAA98CA72B4D0096002BD5C0 /* ContentView.swift in Sources */,
 				FADC82972B4E0AF8006DA5E1 /* IntroView.swift in Sources */,
 				FAA98CB52B4D01B0002BD5C0 /* CalmingView.swift in Sources */,
+				FA1A965F2B4F8F40001026B7 /* GPTService.swift in Sources */,
 				FAA98CA52B4D0096002BD5C0 /* DeliriumDriftApp.swift in Sources */,
 				FAA98CB92B4D0247002BD5C0 /* AudioPlayer.swift in Sources */,
 				FA1A965C2B4F4921001026B7 /* ImagePredictor.swift in Sources */,
