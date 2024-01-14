@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		398016D6E0A9130CA7F5D771E3279091 /* OpenAIKitNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7C727459A89D77DB3B5AC059CF9199 /* OpenAIKitNetwork.swift */; };
+		424F8E66E5B2DF319F37F2E16A838CFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4CB504C0F4484C4D403607A5CF1138F6 /* ChatCompletionsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B216DC58C2E00705C277FEA9588AEAB /* ChatCompletionsRequest.swift */; };
+		5C8AE29A6C3B1CFE3106BBE9D519FD9C /* OpenAIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1D5FFD8C57E32A7984C3BB556C2BF59 /* OpenAIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		639140D82553C53E9720F17CD47A5C04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		755CD2EB4D2577FB9A78C813D9821F0D /* Pods-DeliriumDrift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CDE2CC075EABB466F12EF04AF38269 /* Pods-DeliriumDrift-dummy.m */; };
+		7916366B70026165736FD9BBE7076A2C /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D81614A0E0981F52EA52C6FAA6D285 /* Images.swift */; };
+		7FAA3C4CF517B8AC85E09ABAECA0693B /* Pods-DeliriumDrift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 282FE22DB2A4F43C6772239F6BC5226B /* Pods-DeliriumDrift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		842BA6CC380CE959EE9F16AF30CCF20D /* EditsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F42C0E95D4EB8242C40068AE4BFA94 /* EditsModels.swift */; };
+		849C72AD41C735FD806D111D285CC173 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA38A5B2DB308604397A26CE5F055E73 /* Chat.swift */; };
+		84F8AA6B018C8354A3E075703B621BE7 /* NetworkRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D5B8B1E31D7CADAD13EA6E3EA743D /* NetworkRoutes.swift */; };
+		8D019F5BFA08ECB650B1102F03DE0FE8 /* AIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DF4C0F371A2525CEBB49A33987726 /* AIModel.swift */; };
+		AB145FC40AA5B73C3BE644A2AF6167C0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C4F1A010B88F7AE48C1A5BBE02E0B2 /* Extensions.swift */; };
+		D1C76E620866465F831D7DA922CCD445 /* CompletionsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF6E5EAC79D8516FD38FCBD025A2CA4 /* CompletionsModels.swift */; };
+		D7D3C039F265D42593EDE15E4A91508E /* ImagesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6442FD645762D5A0DB76352BB3F1D6E7 /* ImagesModels.swift */; };
+		E6CCCB738B0EB8D27D85FC961194896D /* OpenAIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A6B46C34C74977D02CDF25DDE5D10B /* OpenAIKit.swift */; };
+		F05B67C3F8D44342067C31E1C7A9AA33 /* AIEventStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3D61E400F8429E44C786A473AA546B /* AIEventStream.swift */; };
+		F0941A560662F186029207CAB1369928 /* OpenAIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 405B6BB3A93CBC9BF69F78754A047A9E /* OpenAIKit-dummy.m */; };
+		F489CE80F041C5484F5A7A6C48D0F351 /* Edits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A4B76B1880CD3DE5BF5CEA8DEE0323 /* Edits.swift */; };
+		F9B1681D56B5C75CC19A0511F3EC3B06 /* Completions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFC04BF9994E70B2C9DFA492056B9D /* Completions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BE3C4B2F564EEC1EDA7E11F71554A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE8D63A9F0558A380BDAF8E8DE85B31;
+			remoteInfo = OpenAIKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		065308381F59F521F4A8D22D61B95C60 /* Pods-DeliriumDrift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-DeliriumDrift"; path = Pods_DeliriumDrift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		123DCD9017EDF32953C269CDE40B7E47 /* Pods-DeliriumDrift-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeliriumDrift-acknowledgements.plist"; sourceTree = "<group>"; };
+		24A6B46C34C74977D02CDF25DDE5D10B /* OpenAIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenAIKit.swift; path = Sources/OpenAIKit/OpenAIKit.swift; sourceTree = "<group>"; };
+		282FE22DB2A4F43C6772239F6BC5226B /* Pods-DeliriumDrift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DeliriumDrift-umbrella.h"; sourceTree = "<group>"; };
+		39BC422C73C06D28ECD522846B5CB88D /* Pods-DeliriumDrift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DeliriumDrift-Info.plist"; sourceTree = "<group>"; };
+		405B6BB3A93CBC9BF69F78754A047A9E /* OpenAIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenAIKit-dummy.m"; sourceTree = "<group>"; };
+		4E68B296E97D615918F1777F09CF03D9 /* OpenAIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenAIKit.debug.xcconfig; sourceTree = "<group>"; };
+		53EFC04BF9994E70B2C9DFA492056B9D /* Completions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Completions.swift; path = Sources/OpenAIKit/OpenAIKitRequests/Completions.swift; sourceTree = "<group>"; };
+		5668593C49199045E7A7D056798B06B9 /* OpenAIKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OpenAIKit; path = OpenAIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E8DF4C0F371A2525CEBB49A33987726 /* AIModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AIModel.swift; path = Sources/OpenAIKit/Models/AIModel.swift; sourceTree = "<group>"; };
+		6442FD645762D5A0DB76352BB3F1D6E7 /* ImagesModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagesModels.swift; path = Sources/OpenAIKit/Models/ImagesModels.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B216DC58C2E00705C277FEA9588AEAB /* ChatCompletionsRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatCompletionsRequest.swift; path = Sources/OpenAIKit/Models/ChatCompletionsRequest.swift; sourceTree = "<group>"; };
+		94A4B76B1880CD3DE5BF5CEA8DEE0323 /* Edits.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edits.swift; path = Sources/OpenAIKit/OpenAIKitRequests/Edits.swift; sourceTree = "<group>"; };
+		9C04B3054A98C0DF666D34BD6B822FDD /* OpenAIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenAIKit.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A908126215B4B254116A5FD2B26CC43C /* OpenAIKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "OpenAIKit-Info.plist"; sourceTree = "<group>"; };
+		AB7C727459A89D77DB3B5AC059CF9199 /* OpenAIKitNetwork.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenAIKitNetwork.swift; path = Sources/OpenAIKit/Helpers/OpenAIKitNetwork.swift; sourceTree = "<group>"; };
+		ABDC6C02FF901A87611E8351E48FA26A /* OpenAIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenAIKit-prefix.pch"; sourceTree = "<group>"; };
+		ACF6E5EAC79D8516FD38FCBD025A2CA4 /* CompletionsModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CompletionsModels.swift; path = Sources/OpenAIKit/Models/CompletionsModels.swift; sourceTree = "<group>"; };
+		B0D81614A0E0981F52EA52C6FAA6D285 /* Images.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Images.swift; path = Sources/OpenAIKit/OpenAIKitRequests/Images.swift; sourceTree = "<group>"; };
+		B1F42C0E95D4EB8242C40068AE4BFA94 /* EditsModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EditsModels.swift; path = Sources/OpenAIKit/Models/EditsModels.swift; sourceTree = "<group>"; };
+		BB12A22E1EA400F284210BAF5775BB28 /* Pods-DeliriumDrift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeliriumDrift.debug.xcconfig"; sourceTree = "<group>"; };
+		BB35253AD86120125EDC2C7C06401E95 /* OpenAIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OpenAIKit.modulemap; sourceTree = "<group>"; };
+		BC3D61E400F8429E44C786A473AA546B /* AIEventStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AIEventStream.swift; path = Sources/OpenAIKit/Helpers/AIEventStream.swift; sourceTree = "<group>"; };
+		BD4EAB08FA13F3106D8821E98C480FA8 /* Pods-DeliriumDrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DeliriumDrift.release.xcconfig"; sourceTree = "<group>"; };
+		DC608C2CB2E1B8B8D36F8800E10D9448 /* Pods-DeliriumDrift-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DeliriumDrift-frameworks.sh"; sourceTree = "<group>"; };
+		E1D5FFD8C57E32A7984C3BB556C2BF59 /* OpenAIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenAIKit-umbrella.h"; sourceTree = "<group>"; };
+		E214C2251714CCA204BE4C653E3E886F /* Pods-DeliriumDrift-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DeliriumDrift-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E82A64DDFB52AD71555198B5A2536914 /* Pods-DeliriumDrift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DeliriumDrift.modulemap"; sourceTree = "<group>"; };
+		EA38A5B2DB308604397A26CE5F055E73 /* Chat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Chat.swift; path = Sources/OpenAIKit/OpenAIKitRequests/Chat.swift; sourceTree = "<group>"; };
+		F10D5B8B1E31D7CADAD13EA6E3EA743D /* NetworkRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkRoutes.swift; path = Sources/OpenAIKit/Helpers/NetworkRoutes.swift; sourceTree = "<group>"; };
+		F3C4F1A010B88F7AE48C1A5BBE02E0B2 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/OpenAIKit/Extensions/Extensions.swift; sourceTree = "<group>"; };
+		F3CDE2CC075EABB466F12EF04AF38269 /* Pods-DeliriumDrift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DeliriumDrift-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49F803A0FEC9269A3988D1CF79D7F29A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				639140D82553C53E9720F17CD47A5C04 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C20C69B332C2EDBE9C48A9F5601A76B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				424F8E66E5B2DF319F37F2E16A838CFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18CDD8CD0F2B7795BE6301C51539BD6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5668593C49199045E7A7D056798B06B9 /* OpenAIKit */,
+				065308381F59F521F4A8D22D61B95C60 /* Pods-DeliriumDrift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20EE8A58F665B4988B985F188231443C /* OpenAIKit */ = {
+			isa = PBXGroup;
+			children = (
+				BC3D61E400F8429E44C786A473AA546B /* AIEventStream.swift */,
+				5E8DF4C0F371A2525CEBB49A33987726 /* AIModel.swift */,
+				EA38A5B2DB308604397A26CE5F055E73 /* Chat.swift */,
+				7B216DC58C2E00705C277FEA9588AEAB /* ChatCompletionsRequest.swift */,
+				53EFC04BF9994E70B2C9DFA492056B9D /* Completions.swift */,
+				ACF6E5EAC79D8516FD38FCBD025A2CA4 /* CompletionsModels.swift */,
+				94A4B76B1880CD3DE5BF5CEA8DEE0323 /* Edits.swift */,
+				B1F42C0E95D4EB8242C40068AE4BFA94 /* EditsModels.swift */,
+				F3C4F1A010B88F7AE48C1A5BBE02E0B2 /* Extensions.swift */,
+				B0D81614A0E0981F52EA52C6FAA6D285 /* Images.swift */,
+				6442FD645762D5A0DB76352BB3F1D6E7 /* ImagesModels.swift */,
+				F10D5B8B1E31D7CADAD13EA6E3EA743D /* NetworkRoutes.swift */,
+				24A6B46C34C74977D02CDF25DDE5D10B /* OpenAIKit.swift */,
+				AB7C727459A89D77DB3B5AC059CF9199 /* OpenAIKitNetwork.swift */,
+				64B3B9AD14F63CBA36854AFD73A0FDA1 /* Support Files */,
+			);
+			name = OpenAIKit;
+			path = OpenAIKit;
+			sourceTree = "<group>";
+		};
+		23425D78C0E39E978964F957A29FDE67 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				27E7B33439450F7E2D7E4163BA8A4FD3 /* Pods-DeliriumDrift */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		27E7B33439450F7E2D7E4163BA8A4FD3 /* Pods-DeliriumDrift */ = {
+			isa = PBXGroup;
+			children = (
+				E82A64DDFB52AD71555198B5A2536914 /* Pods-DeliriumDrift.modulemap */,
+				E214C2251714CCA204BE4C653E3E886F /* Pods-DeliriumDrift-acknowledgements.markdown */,
+				123DCD9017EDF32953C269CDE40B7E47 /* Pods-DeliriumDrift-acknowledgements.plist */,
+				F3CDE2CC075EABB466F12EF04AF38269 /* Pods-DeliriumDrift-dummy.m */,
+				DC608C2CB2E1B8B8D36F8800E10D9448 /* Pods-DeliriumDrift-frameworks.sh */,
+				39BC422C73C06D28ECD522846B5CB88D /* Pods-DeliriumDrift-Info.plist */,
+				282FE22DB2A4F43C6772239F6BC5226B /* Pods-DeliriumDrift-umbrella.h */,
+				BB12A22E1EA400F284210BAF5775BB28 /* Pods-DeliriumDrift.debug.xcconfig */,
+				BD4EAB08FA13F3106D8821E98C480FA8 /* Pods-DeliriumDrift.release.xcconfig */,
+			);
+			name = "Pods-DeliriumDrift";
+			path = "Target Support Files/Pods-DeliriumDrift";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		64B3B9AD14F63CBA36854AFD73A0FDA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB35253AD86120125EDC2C7C06401E95 /* OpenAIKit.modulemap */,
+				405B6BB3A93CBC9BF69F78754A047A9E /* OpenAIKit-dummy.m */,
+				A908126215B4B254116A5FD2B26CC43C /* OpenAIKit-Info.plist */,
+				ABDC6C02FF901A87611E8351E48FA26A /* OpenAIKit-prefix.pch */,
+				E1D5FFD8C57E32A7984C3BB556C2BF59 /* OpenAIKit-umbrella.h */,
+				4E68B296E97D615918F1777F09CF03D9 /* OpenAIKit.debug.xcconfig */,
+				9C04B3054A98C0DF666D34BD6B822FDD /* OpenAIKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OpenAIKit";
+			sourceTree = "<group>";
+		};
+		994FA80C9DEE8107F1F3F84651329FAA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20EE8A58F665B4988B985F188231443C /* OpenAIKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				994FA80C9DEE8107F1F3F84651329FAA /* Pods */,
+				18CDD8CD0F2B7795BE6301C51539BD6B /* Products */,
+				23425D78C0E39E978964F957A29FDE67 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1558C679894BC29596656FEDF66DF36E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C8AE29A6C3B1CFE3106BBE9D519FD9C /* OpenAIKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E43803002B1CD1FDE6B5C804C491C2EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FAA3C4CF517B8AC85E09ABAECA0693B /* Pods-DeliriumDrift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ADE8D63A9F0558A380BDAF8E8DE85B31 /* OpenAIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00C2EF253EF2925AE0C28D12A6EB27BA /* Build configuration list for PBXNativeTarget "OpenAIKit" */;
+			buildPhases = (
+				1558C679894BC29596656FEDF66DF36E /* Headers */,
+				C24B2C4D12E8D1ECEF3F280E88A50B58 /* Sources */,
+				49F803A0FEC9269A3988D1CF79D7F29A /* Frameworks */,
+				C58880CF6643878D3EC7383519504973 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenAIKit;
+			productName = OpenAIKit;
+			productReference = 5668593C49199045E7A7D056798B06B9 /* OpenAIKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		C39F4220ADF4EA2F0439FAB1682AC66B /* Pods-DeliriumDrift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FD980724332799AFE28215909A716B5 /* Build configuration list for PBXNativeTarget "Pods-DeliriumDrift" */;
+			buildPhases = (
+				E43803002B1CD1FDE6B5C804C491C2EB /* Headers */,
+				986226BD683BAAF217962CDC7711C882 /* Sources */,
+				4C20C69B332C2EDBE9C48A9F5601A76B /* Frameworks */,
+				BA51A37D4AE735B1BBBFF00155B30B08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				916B94B2E62A5E3EB716B4926DEA3D13 /* PBXTargetDependency */,
+			);
+			name = "Pods-DeliriumDrift";
+			productName = Pods_DeliriumDrift;
+			productReference = 065308381F59F521F4A8D22D61B95C60 /* Pods-DeliriumDrift */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 18CDD8CD0F2B7795BE6301C51539BD6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADE8D63A9F0558A380BDAF8E8DE85B31 /* OpenAIKit */,
+				C39F4220ADF4EA2F0439FAB1682AC66B /* Pods-DeliriumDrift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA51A37D4AE735B1BBBFF00155B30B08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C58880CF6643878D3EC7383519504973 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		986226BD683BAAF217962CDC7711C882 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755CD2EB4D2577FB9A78C813D9821F0D /* Pods-DeliriumDrift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C24B2C4D12E8D1ECEF3F280E88A50B58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05B67C3F8D44342067C31E1C7A9AA33 /* AIEventStream.swift in Sources */,
+				8D019F5BFA08ECB650B1102F03DE0FE8 /* AIModel.swift in Sources */,
+				849C72AD41C735FD806D111D285CC173 /* Chat.swift in Sources */,
+				4CB504C0F4484C4D403607A5CF1138F6 /* ChatCompletionsRequest.swift in Sources */,
+				F9B1681D56B5C75CC19A0511F3EC3B06 /* Completions.swift in Sources */,
+				D1C76E620866465F831D7DA922CCD445 /* CompletionsModels.swift in Sources */,
+				F489CE80F041C5484F5A7A6C48D0F351 /* Edits.swift in Sources */,
+				842BA6CC380CE959EE9F16AF30CCF20D /* EditsModels.swift in Sources */,
+				AB145FC40AA5B73C3BE644A2AF6167C0 /* Extensions.swift in Sources */,
+				7916366B70026165736FD9BBE7076A2C /* Images.swift in Sources */,
+				D7D3C039F265D42593EDE15E4A91508E /* ImagesModels.swift in Sources */,
+				84F8AA6B018C8354A3E075703B621BE7 /* NetworkRoutes.swift in Sources */,
+				E6CCCB738B0EB8D27D85FC961194896D /* OpenAIKit.swift in Sources */,
+				F0941A560662F186029207CAB1369928 /* OpenAIKit-dummy.m in Sources */,
+				398016D6E0A9130CA7F5D771E3279091 /* OpenAIKitNetwork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		916B94B2E62A5E3EB716B4926DEA3D13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenAIKit;
+			target = ADE8D63A9F0558A380BDAF8E8DE85B31 /* OpenAIKit */;
+			targetProxy = 1BE3C4B2F564EEC1EDA7E11F71554A51 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		032504F201C69275441D32C68CCD1F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4A019AA2904F86403FA4E0296ABBAFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E68B296E97D615918F1777F09CF03D9 /* OpenAIKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenAIKit/OpenAIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenAIKit/OpenAIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OpenAIKit/OpenAIKit.modulemap";
+				PRODUCT_MODULE_NAME = OpenAIKit;
+				PRODUCT_NAME = OpenAIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C16308A6EDD4EECD3992AF7BA49D3CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C04B3054A98C0DF666D34BD6B822FDD /* OpenAIKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenAIKit/OpenAIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenAIKit/OpenAIKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/OpenAIKit/OpenAIKit.modulemap";
+				PRODUCT_MODULE_NAME = OpenAIKit;
+				PRODUCT_NAME = OpenAIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C8DF18D14B17D6C669D77299B96D37D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD4EAB08FA13F3106D8821E98C480FA8 /* Pods-DeliriumDrift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D50DEAA32525CB37EDBC470CB430D98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB12A22E1EA400F284210BAF5775BB28 /* Pods-DeliriumDrift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00C2EF253EF2925AE0C28D12A6EB27BA /* Build configuration list for PBXNativeTarget "OpenAIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A019AA2904F86403FA4E0296ABBAFE8 /* Debug */,
+				6C16308A6EDD4EECD3992AF7BA49D3CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */,
+				032504F201C69275441D32C68CCD1F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FD980724332799AFE28215909A716B5 /* Build configuration list for PBXNativeTarget "Pods-DeliriumDrift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D50DEAA32525CB37EDBC470CB430D98D /* Debug */,
+				C8DF18D14B17D6C669D77299B96D37D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

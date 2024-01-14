@@ -11,7 +11,13 @@ struct RelatedWordsView: View {
     var selectedPrediction: ImagePredictor.Prediction
     @State private var relatedWords: [String] = []
     
-    let gptService = GPTService()
+    let gptService: GPTService
+
+    // Inject GPTService instance with the required API key and organization name
+    init(selectedPrediction: ImagePredictor.Prediction, gptService: GPTService) {
+        self.selectedPrediction = selectedPrediction
+        self.gptService = gptService
+    }
 
     var body: some View {
         VStack {
@@ -26,15 +32,14 @@ struct RelatedWordsView: View {
     }
 
     func generateRelatedWords() {
-        gptService.generateRelatedWords(inputText: selectedPrediction.classification) { result in
-            switch result {
-            case .success(let words):
-                // Update the state variable
-                relatedWords = words
-            case .failure(let error):
-                // Handle the error
-                print("Error generating related words: \(error.localizedDescription)")
-            }
-        }
+        // Use GPTService to make chat completions call
+        gptService.makeChatCompletionsCall(prompt: selectedPrediction.classification, completion: { result in
+            // Handle the result, for example, updating relatedWords
+            self.relatedWords = [result]
+        }, errorHandler: { error in
+            // Handle the error
+            print("Error generating related words: \(error.localizedDescription)")
+        })
     }
 }
+

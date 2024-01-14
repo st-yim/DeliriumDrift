@@ -19,7 +19,10 @@ struct ContentView: View {
             } else {
                 if let selectedPrediction = selectedPrediction {
                     
-                    RelatedWordsView(selectedPrediction: selectedPrediction)
+                    let gptService = GPTService(apiKey: "YOUR-API-KEY", apiOrg: "ORG")
+                    
+                    RelatedWordsView(selectedPrediction: selectedPrediction, gptService: gptService)
+                    
                 } else {
                     Text("Switch to Camera View")
                         .onTapGesture {

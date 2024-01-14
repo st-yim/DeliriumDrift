@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0942FB99997888D56D405463 /* Pods_DeliriumDrift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B137E08159E617B86E845C6 /* Pods_DeliriumDrift.framework */; };
 		FA1A96502B4F4310001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A964F2B4F40E1001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
 		FA1A96512B4F4311001026B7 /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A964E2B4F40E1001026B7 /* VNClassificationObservation+confidenceString.swift */; };
 		FA1A965C2B4F4921001026B7 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1A96492B4F3BD2001026B7 /* ImagePredictor.swift */; };
@@ -27,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B137E08159E617B86E845C6 /* Pods_DeliriumDrift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeliriumDrift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8A454F7764D1312CCF4097B /* Pods-DeliriumDrift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliriumDrift.release.xcconfig"; path = "Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift.release.xcconfig"; sourceTree = "<group>"; };
+		B7D8EAA83BC88E4F6F9DFC07 /* Pods-DeliriumDrift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeliriumDrift.debug.xcconfig"; path = "Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift.debug.xcconfig"; sourceTree = "<group>"; };
 		FA1A96492B4F3BD2001026B7 /* ImagePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
 		FA1A964E2B4F40E1001026B7 /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
 		FA1A964F2B4F40E1001026B7 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
@@ -54,12 +58,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0942FB99997888D56D405463 /* Pods_DeliriumDrift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32FFE7FB10E829CF65194EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B137E08159E617B86E845C6 /* Pods_DeliriumDrift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D52AB001516F2CB03F650FA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7D8EAA83BC88E4F6F9DFC07 /* Pods-DeliriumDrift.debug.xcconfig */,
+				A8A454F7764D1312CCF4097B /* Pods-DeliriumDrift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA1A96482B4F3BD2001026B7 /* Vision + Core-ML */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +131,8 @@
 			children = (
 				FAA98CA32B4D0096002BD5C0 /* DeliriumDrift */,
 				FAA98CA22B4D0096002BD5C0 /* Products */,
+				D52AB001516F2CB03F650FA1 /* Pods */,
+				32FFE7FB10E829CF65194EDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAA98CAF2B4D0097002BD5C0 /* Build configuration list for PBXNativeTarget "DeliriumDrift" */;
 			buildPhases = (
+				D012BBA4C2F70CECB274E2E2 /* [CP] Check Pods Manifest.lock */,
 				FAA98C9D2B4D0096002BD5C0 /* Sources */,
 				FAA98C9E2B4D0096002BD5C0 /* Frameworks */,
 				FAA98C9F2B4D0096002BD5C0 /* Resources */,
+				F0AF665A77CAE9672D465B1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -222,6 +248,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D012BBA4C2F70CECB274E2E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeliriumDrift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0AF665A77CAE9672D465B1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeliriumDrift/Pods-DeliriumDrift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAA98C9D2B4D0096002BD5C0 /* Sources */ = {
@@ -286,7 +354,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -349,7 +417,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -370,6 +438,7 @@
 		};
 		FAA98CB02B4D0097002BD5C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7D8EAA83BC88E4F6F9DFC07 /* Pods-DeliriumDrift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -401,6 +470,7 @@
 		};
 		FAA98CB12B4D0097002BD5C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A454F7764D1312CCF4097B /* Pods-DeliriumDrift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
