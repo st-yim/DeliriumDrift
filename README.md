@@ -16,8 +16,22 @@ Delirium is more commonly observed in the elderly population and can serve as th
 
 *Note: The information provided is based on insights from a 2023 study (Al Farsi et al., 2023).*
 
-## Disclaimer
+
+## About the DeliriumDrift App
+
+### Disclaimer
 
 This app is a personal endeavor designed to provide an engaging and potentially therapeutic experience. While it is developed with the intention to alleviate clinical symptoms associated with delirium, there are no clinical studies or proof to support its effectiveness. Users are encouraged to consult with healthcare professionals for personalized advice and treatment.
 
+### App Features
+
+[Describe the features and functionality of the app here.]
+
+### Usage Recommendations
+
+[Provide guidance on how users can make the most of the app, emphasizing its supplementary nature to professional medical advice.]
+
+### Technical Information
+
+[Include any technical details, system requirements, or other relevant information.]
 
